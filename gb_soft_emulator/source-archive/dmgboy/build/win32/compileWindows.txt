@@ -1,0 +1,40 @@
+HOW TO COMPILE DMGBOY IN WINDOWS
+--------------------------------
+DMGBoy needs two libraries that are not included in the source code. These are
+"wxWidgets 3" and "SDL". You have to download them and make they
+visible to Visual Studio. The next lines explain how to make it.
+The compilation was made with Visual Studio 2010 in Windows XP.
+
+WXWIDGETS 3
+-----------
+Download the wxWidgets 3 headers and precompiled binaries for Visual Studio 2010
+32-bit. You can do it from the next urls:
+http://sourceforge.net/projects/wxwindows/files/3.0.0/binaries/wxMSW-3.0.0_vc100_Dev.7z/download
+http://sourceforge.net/projects/wxwindows/files/3.0.0/binaries/wxMSW-3.0.0_vc100_ReleaseDLL.7z/download
+Unzip the two files into the same directory, for example C:\wx\3.0.0
+
+SDL 1.2
+-------
+Download the Visual C++ development libraries. Here is the url:
+http://www.libsdl.org/release/SDL-devel-1.2.15-VC.zip
+Unzip it for example in C:\SDL-1.2.15
+
+ENVIRONMENT VARIABLES
+--------------------
+You have to create 3 environment variables in the "User variables" section with
+the next names: WXWIN, GBSNDEMU and GLEW. The GbSndEmu and Glew libraries are
+included in the DMGBoy source code. For example:
+WXWIN    - C:\wx\3.0.0
+GBSNDEMU - C:\DMGBoy\src\Gb_Snd_Emu-0.1.4
+GLEW     - C:\DMGBoy\src\GUI\3D\glew-1.10.0
+
+COMPILE DMGBOY
+--------------
+Open DMGBoy.sln and open the project properties.
+Under the "VC++ Directories" select "Include Directories" and add the SDL
+include directory. For example:
+C:\SDL-1.2.15\include
+In "Library Directories" add the SDL library directory. For example: 
+C:\SDL-1.2.15\lib\x86
+Close the project properties accepting the changes. And now you can compile
+DMGBoy.

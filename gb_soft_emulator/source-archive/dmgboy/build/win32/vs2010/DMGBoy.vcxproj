@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\Cartridge.h" />
+    <ClInclude Include="..\..\..\src\CPU.h" />
+    <ClInclude Include="..\..\..\src\Debugger.h" />
+    <ClInclude Include="..\..\..\src\Def.h" />
+    <ClInclude Include="..\..\..\src\GBException.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\Basic_Gb_Apu.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\boost\config.hpp" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\boost\cstdint.hpp" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\boost\static_assert.hpp" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\blargg_common.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\blargg_source.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Blip_Buffer.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Blip_Synth.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Gb_Apu.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Gb_Oscs.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Multi_Buffer.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\Sound_Queue.h" />
+    <ClInclude Include="..\..\..\src\Gb_Snd_Emu-0.1.4\Wave_Writer.h" />
+    <ClInclude Include="..\..\..\src\GUI\3D\Array.h" />
+    <ClInclude Include="..\..\..\src\GUI\3D\Camera.h" />
+    <ClInclude Include="..\..\..\src\GUI\3D\Geo.h" />
+    <ClInclude Include="..\..\..\src\GUI\3D\wxImageLoader.h" />
+    <ClInclude Include="..\..\..\src\GUI\AboutDialog.h" />
+    <ClInclude Include="..\..\..\src\GUI\BreakpointsDialog.h" />
+    <ClInclude Include="..\..\..\src\GUI\DebuggerDialog.h" />
+    <ClInclude Include="..\..\..\src\GUI\EmulationThread.h" />
+    <ClInclude Include="..\..\..\src\GUI\IDControls.h" />
+    <ClInclude Include="..\..\..\src\GUI\InputTextCtrl.h" />
+    <ClInclude Include="..\..\..\src\GUI\MainApp.h" />
+    <ClInclude Include="..\..\..\src\GUI\MainFrame.h" />
+    <ClInclude Include="..\..\..\src\GUI\RendererBase.h" />
+    <ClInclude Include="..\..\..\src\GUI\RendererOGL.h" />
+    <ClInclude Include="..\..\..\src\GUI\RendererSW.h" />
+    <ClInclude Include="..\..\..\src\GUI\Settings.h" />
+    <ClInclude Include="..\..\..\src\GUI\SettingsDialog.h" />
+    <ClInclude Include="..\..\..\src\Instructions.h" />
+    <ClInclude Include="..\..\..\src\InstructionsDef.h" />
+    <ClInclude Include="..\..\..\src\Log.h" />
+    <ClInclude Include="..\..\..\src\MBC.h" />
+    <ClInclude Include="..\..\..\src\Memory.h" />
+    <ClInclude Include="..\..\..\src\Pad.h" />
+    <ClInclude Include="..\..\..\src\Registers.h" />
+    <ClInclude Include="..\..\..\src\Sound.h" />
+    <ClInclude Include="..\..\..\src\SoundSDL.h" />
+    <ClInclude Include="..\..\..\src\Video.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\Cartridge.cpp" />
+    <ClCompile Include="..\..\..\src\CPU.cpp" />
+    <ClCompile Include="..\..\..\src\Debugger.cpp" />
+    <ClCompile Include="..\..\..\src\GBException.cpp" />
+    <ClCompile Include="..\..\..\src\Gb_Snd_Emu-0.1.4\Basic_Gb_Apu.cpp" />
+    <ClCompile Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Blip_Buffer.cpp" />
+    <ClCompile Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Gb_Apu.cpp" />
+    <ClCompile Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Gb_Oscs.cpp" />
+    <ClCompile Include="..\..\..\src\Gb_Snd_Emu-0.1.4\gb_apu\Multi_Buffer.cpp" />
+    <ClCompile Include="..\..\..\src\Gb_Snd_Emu-0.1.4\Sound_Queue.cpp" />
+    <ClCompile Include="..\..\..\src\Gb_Snd_Emu-0.1.4\Wave_Writer.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\3D\Array.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\3D\Camera.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\3D\Geo.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\3D\glew-1.10.0\src\glew.c" />
+    <ClCompile Include="..\..\..\src\GUI\3D\wxImageLoader.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\AboutDialog.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\BreakpointsDialog.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\DebuggerDialog.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\EmulationThread.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\InputTextCtrl.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\MainApp.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\MainFrame.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\RendererBase.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(WXWIN)\include;$(WXWIN)\include\msvc;$(GBSNDEMU);$(PORTAUDIO)\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_UNICODE;UNICODE;WXUSINGDLL;wxMSVC_VERSION_AUTO;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GUI\RendererOGL.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\RendererSW.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\Settings.cpp" />
+    <ClCompile Include="..\..\..\src\GUI\SettingsDialog.cpp" />
+    <ClCompile Include="..\..\..\src\Instructions.cpp" />
+    <ClCompile Include="..\..\..\src\InstructionsDef.cpp" />
+    <ClCompile Include="..\..\..\src\Log.cpp" />
+    <ClCompile Include="..\..\..\src\MBC.cpp" />
+    <ClCompile Include="..\..\..\src\Memory.cpp" />
+    <ClCompile Include="..\..\..\src\Pad.cpp" />
+    <ClCompile Include="..\..\..\src\Registers.cpp" />
+    <ClCompile Include="..\..\..\src\Sound.cpp" />
+    <ClCompile Include="..\..\..\src\SoundSDL.cpp" />
+    <ClCompile Include="..\..\..\src\Video.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\src\GUI\Windows\DMGBoy.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F8EA2224-322E-4208-BDE5-3DF28CEB5100}</ProjectGuid>
+    <RootNamespace>GB</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>DMGBoy</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Archivos de programa\SDL-1.2.15-VC\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Archivos de programa\SDL-1.2.15-VC\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Archivos de programa\SDL-1.2.15-VC\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Archivos de programa\SDL-1.2.15-VC\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WINVER=0x0400;__WXMSW__;_WINDOWS;_UNICODE;UNICODE;WXUSINGDLL;wxMSVC_VERSION_AUTO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(WXWIN)\include\msvc;$(WXWIN)\include;$(GBSNDEMU);$(GLEW)\include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;SDL.lib;SDLmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc100_dll</AdditionalLibraryDirectories>
+      <Profile>false</Profile>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(WXWIN)\include;$(WXWIN)\include\msvc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;WINVER=0x0400;__WXMSW__;_WINDOWS;_UNICODE;UNICODE;WXUSINGDLL;wxMSVC_VERSION_AUTO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(WXWIN)\include\msvc;$(WXWIN)\include;$(GBSNDEMU);$(GLEW)\include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;SDL.lib;SDLmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc100_dll</AdditionalLibraryDirectories>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(WXWIN)\include;$(WXWIN)\include\msvc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

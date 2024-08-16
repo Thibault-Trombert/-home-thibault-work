@@ -1,0 +1,68 @@
+HOW TO COMPILE DMGBOY IN MACOS X
+--------------------------------
+DMGBoy needs two libraries that are not included in the source code. These are
+"wxWidgets 3" and "Portaudio". You have to compile by yourself and make they
+visible to XCode. The next lines explain how to make it.
+The compilation was made with MacOSX 10.9.2 and XCode 5.1.1.
+
+
+COMPILE WXWIDGETS 3
+-------------------
+Download wxWidgets 3 source code (3.0.0 tested):
+https://www.wxwidgets.org/downloads/
+Uncompress it
+
+Type the following in the Terminal (change the paths to the correct ones):
+cd path/to/wxWidgets3/
+mkdir build-release
+cd build-release/
+export ARCHVAL="-arch i386"
+export SDK19LOC="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk"
+export MACMINVER="10.6"
+../configure \
+       --disable-shared \
+       --with-opengl \
+       --with-osx_cocoa \
+       --with-macosx-version-min=${MACMINVER} \
+       --with-macosx-sdk=${SDK19LOC} \
+       --prefix="$(pwd)" \
+       CFLAGS="${ARCHVAL}" \
+       CXXFLAGS="${ARCHVAL}" \
+       CPPFLAGS="${ARCHVAL}" \
+       LDFLAGS="${ARCHVAL}" \
+       OBJCFLAGS="${ARCHVAL}" \
+       OBJCXXFLAGS="${ARCHVAL}"
+       
+Go to "build-release/lib/wx/include/osx_cocoa-unicode-static-3.0/wx/setup.h" and
+set "wxUSE_JOYSTICK" to 1
+make
+
+
+COMPILE PORTAUDIO
+-----------------
+Download portaudio source code (pa_stable_v19_20140130 tested):
+http://www.portaudio.com/download.html
+Uncompress it
+
+Type the following in the Terminal (change the paths to the correct ones):
+cd path/to/portaudio
+export ARCHVAL="-arch i386"
+export SDK19LOC="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk"
+export MACMINVER="10.6"
+SDKVER="${ARCHVAL} -isysroot ${SDK19LOC} -mmacosx-version-min=${MACMINVER}"
+CFLAGS="-O2 -g -Wall ${SDKVER}" \
+    LDFLAGS=" ${SDKVER}" \
+./configure
+make
+    
+   
+RENAME CONFIG.XCCONFIG
+--------------------------
+You have to rename the file Config.xcconfig.bak to Config.xcconfig and change
+the path of the variables to the correct ones.
+The source code of GBSNDEMU is inside the DMGBoy source code.
+
+
+COMPILE DMGBOY
+--------------
+Open DMGBoy.xcodeproj with Xcode and compile.

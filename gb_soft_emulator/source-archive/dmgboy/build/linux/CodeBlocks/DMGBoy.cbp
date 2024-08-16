@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DMGBoy" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="3D/;Gb_Snd_Emu/;HW/;GUI/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="DMGBoy" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="DMGBoy" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cxxflags`" />
+			<Add directory="../../../src/Gb_Snd_Emu-0.1.4" />
+			<Add directory="/usr/include/" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs --gl-libs`" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="libportaudio" />
+			<Add library="libGLEW" />
+		</Linker>
+		<Unit filename="../../../src/CPU.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/CPU.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Cartridge.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Cartridge.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Debugger.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Debugger.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Def.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/GBException.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/GBException.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/3D/Array.cpp">
+			<Option virtualFolder="3D/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/3D/Array.h">
+			<Option virtualFolder="3D/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/3D/Camera.cpp">
+			<Option virtualFolder="3D/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/3D/Camera.h">
+			<Option virtualFolder="3D/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/3D/Geo.cpp">
+			<Option virtualFolder="3D/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/3D/Geo.h">
+			<Option virtualFolder="3D/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/3D/wxImageLoader.cpp">
+			<Option virtualFolder="3D/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/3D/wxImageLoader.h">
+			<Option virtualFolder="3D/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/AboutDialog.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/AboutDialog.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/BreakpointsDialog.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/BreakpointsDialog.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/DebuggerDialog.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/DebuggerDialog.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/EmulationThread.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/EmulationThread.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/IDControls.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/InputTextCtrl.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/InputTextCtrl.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/MainApp.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/MainApp.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/MainFrame.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/MainFrame.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/RendererBase.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/RendererBase.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/RendererOGL.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/RendererOGL.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/RendererSW.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/RendererSW.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/Settings.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/Settings.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/SettingsDialog.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/GUI/SettingsDialog.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/Basic_Gb_Apu.cpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/Basic_Gb_Apu.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/Wave_Writer.cpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/Wave_Writer.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/boost/config.hpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/boost/cstdint.hpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/boost/static_assert.hpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Blip_Buffer.cpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Blip_Buffer.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Blip_Synth.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Gb_Apu.cpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Gb_Apu.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Gb_Oscs.cpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Gb_Oscs.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Multi_Buffer.cpp">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/Multi_Buffer.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/blargg_common.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Gb_Snd_Emu-0.1.4/gb_apu/blargg_source.h">
+			<Option virtualFolder="Gb_Snd_Emu/" />
+		</Unit>
+		<Unit filename="../../../src/Instructions.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Instructions.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/InstructionsDef.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/InstructionsDef.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Log.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Log.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/MBC.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/MBC.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Memory.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Memory.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Pad.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Pad.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Registers.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Registers.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Sound.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Sound.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/SoundPortaudio.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/SoundPortaudio.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Video.cpp">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Unit filename="../../../src/Video.h">
+			<Option virtualFolder="HW/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

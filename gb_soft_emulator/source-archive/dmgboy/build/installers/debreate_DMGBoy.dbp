@@ -1,0 +1,91 @@
+[DEBREATE-0.7.7]
+<<CTRL>>
+Package: dmgboy
+Version: 2.0
+Section: games
+Maintainer: Pablo Gasco <pablogasco@gmail.com>
+Homepage: http://code.google.com/p/dmgboy/
+Priority: optional
+Architecture: i386
+Depends: libglew1.10 (>=1.10.0-0), libwxgtk3.0-0 (>=3.0.0), libportaudio2, libc6 (>=2)
+Description: Gameboy emulator
+ Open source Game Boy Emulator written in C++ with wxwidgets.
+
+<</CTRL>>
+<<FILES>>
+1
+/mnt/pablo/Documents/Programacion/DMGBoy/src/GUI/3D/gb.jpg* -> gb.jpg -> /usr/share/DMGBoy
+/mnt/pablo/Documents/Programacion/DMGBoy/src/GUI/3D/gb.3di -> gb.3di -> /usr/share/DMGBoy
+/mnt/pablo/Documents/Programacion/DMGBoy/build/languages/fr/dmgboy.mo -> dmgboy.mo -> /usr/share/DMGBoy/languages/fr/LC_MESSAGES/
+/mnt/pablo/Documents/Programacion/DMGBoy/build/languages/el/dmgboy.mo -> dmgboy.mo -> /usr/share/DMGBoy/languages/el/LC_MESSAGES/
+/mnt/pablo/Documents/Programacion/DMGBoy/build/languages/es/dmgboy.mo -> dmgboy.mo -> /usr/share/DMGBoy/languages/es/LC_MESSAGES/
+/mnt/pablo/Documents/Programacion/DMGBoy/build/linux/CodeBlocks/DMGBoy* -> DMGBoy -> /usr/games
+/mnt/pablo/Documents/Programacion/GB/iconos/gb256.png -> gb256.png -> /usr/share/DMGBoy/icons/
+/mnt/pablo/Documents/Programacion/GB/iconos/gb64.png -> gb64.png -> /usr/share/DMGBoy/icons/
+/mnt/pablo/Documents/Programacion/GB/iconos/gb48.png -> gb48.png -> /usr/share/DMGBoy/icons/
+<</FILES>>
+<<SCRIPTS>>
+<<PREINST>>
+0
+<</PREINST>>
+<<POSTINST>>
+0
+<</POSTINST>>
+<<PRERM>>
+0
+<</PRERM>>
+<<POSTRM>>
+0
+<</POSTRM>>
+<</SCRIPTS>>
+<<CHANGELOG>>
+<<DEST>>DEFAULT<</DEST>>
+
+<</CHANGELOG>>
+<<COPYRIGHT>>
+This package was debianized by Pablo Gasco <pablogasco@gmail.com> on
+2014.
+ 
+The current Debian maintainer is Pablo Gasco <pablogasco@gmail.com>
+ 
+Upstream Authors: Pablo Gasco
+ 
+Copyright: 2009 - 2014 Pablo Gasco
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+On Debian systems, the complete text of the GNU General Public
+License, version 3, can be found in /usr/share/common-licenses/GPL-3.
+
+The Debian packaging is (C) 2012, Pablo Gasco <pablogasco@gmail.com> and
+is licensed under the GPL, see above.
+<</COPYRIGHT>>
+<<MENU>>
+1
+Name=DMGBoy
+Version=1.0
+Exec=DMGBoy
+Comment=Gameboy emulator
+Icon=/usr/share/DMGBoy/icons/gb64.png
+Type=Application
+Terminal=false
+StartupNotify=true
+Encoding=UTF-8
+Categories=Game;
+<</MENU>>
+<<BUILD>>
+0
+1
+0
+<</BUILD>>

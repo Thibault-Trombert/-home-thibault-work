@@ -1,0 +1,22 @@
+- Permitir cargar roms comprimidas en 7z
+
+Terminado:
+- Multi idioma / unicode
+- Separar emulación en un hilo aparte
+- Pasarlo a OpenGL
+- Sonido
+- Permitir Savestates en cualquier momento
+- Guardar a disco duro la memoria de los cartuchos que llevan bateria
+- Lista de ultimas ROMS
+- Cargar por linea de comandos
+- drag & drop
+- accesos rapidos: Ctrl+R o Cmd+R
+- Poder cambiar los botones del pad en cualquier momento: fichero + interfaz grafica
+- ventana para opciones
+- Hacer la pantalla mas grande (2x, 4x, etc)
+- Cambiar colores visualizacion (escala de verdes)
+- Permitir cargar roms comprimidas en zip
+	http://docs.wxwidgets.org/2.8.11/wx_wxarc.html
+- Corregir instalador windows7
+- http://docs.wxwidgets.org/2.8/wx_wxstandardpaths.html
+- http://wyoguide.sourceforge.net/guidelines/prefs.html

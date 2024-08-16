@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  DMGBoy
+//
+//  Created by Pablo Gascó on 21/04/14.
+//
+//
+
+WXWIN = /Path/To/WxWidgets/3.0
+PORTAUDIODIR = /Path/To/Portaudio
+GBSNDEMU = /Path/To/Gb_Snd_Emu

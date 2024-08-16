@@ -1,0 +1,262 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DMGBoy 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-01 15:29+0200\n"
+"PO-Revision-Date: 2014-06-01 15:40+0100\n"
+"Last-Translator: Pablo <pablogasco@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: ../GUI/EmulationThread.cpp:120
+msgid ""
+"\n"
+"doesn't exist"
+msgstr ""
+"\n"
+"δεν υπάρχει"
+
+#: ../GUI/MainFrame.cpp:213
+msgid "&About"
+msgstr "&Σχετικά"
+
+#: ../GUI/MainFrame.cpp:185
+msgid "&Debug"
+msgstr "&Αποσφαλμάτωση"
+
+#: ../GUI/MainFrame.cpp:200
+msgid "&Emulation"
+msgstr "&Εξομοίωση"
+
+#: ../GUI/MainFrame.cpp:175
+msgid "&File"
+msgstr "&Αρχείο"
+
+#: ../GUI/MainFrame.cpp:187
+msgid "&FullScreen"
+msgstr "&Πλήρης-οθόνη"
+
+#: ../GUI/MainFrame.cpp:216
+msgid "&Help"
+msgstr "&Βοήθεια"
+
+#: ../GUI/MainFrame.cpp:209
+msgid "&Language"
+msgstr "&Γλώσσα"
+
+#: ../GUI/MainFrame.cpp:141
+msgid "&Open"
+msgstr "&Άνοιγμα"
+
+#: ../GUI/MainFrame.cpp:181
+msgid "&Pause"
+msgstr "&Παύση"
+
+#: ../GUI/MainFrame.cpp:177
+msgid "&Settings"
+msgstr "&Ρυθμίσεις"
+
+#: ../GUI/MainFrame.cpp:179
+msgid "&Start"
+msgstr "&Εκκίνηση"
+
+#: ../GUI/AboutDialog.cpp:32 ../GUI/AboutDialog.cpp:37
+msgid "About ..."
+msgstr "Σχετικά  ..."
+
+#: ../GUI/AboutDialog.cpp:60
+msgid "Authors of Pan Docs"
+msgstr "Συντάκτες του Pan Docs"
+
+#: ../GUI/MainFrame.cpp:252
+msgid "Change View"
+msgstr "Αλλαγή Προβολής"
+
+#: ../GUI/MainFrame.cpp:268
+msgid "Choose a gameboy rom to open"
+msgstr "Επιλογή ενός gameboy rom για άνοιγμα"
+
+#: ../GUI/MainFrame.cpp:147 ../GUI/MainFrame.cpp:154
+msgid "Clear recent roms"
+msgstr "Καθαρισμό πρόσφατων roms"
+
+#: ../GUI/SettingsDialog.cpp:162
+msgid "DMG color palette:"
+msgstr "DMG παλέτα χρωμάτων:"
+
+#: ../GUI/SettingsDialog.cpp:233
+msgid "Down:"
+msgstr "Κάτω:"
+
+#: ../GUI/MainFrame.cpp:172
+msgid "E&xit"
+msgstr "Έ&ξοδος"
+
+#: ../GUI/SettingsDialog.cpp:200
+msgid "Enabled:"
+msgstr "Ενεργοποιημένo:"
+
+#: ../GUI/EmulationThread.cpp:120 ../GUI/EmulationThread.cpp:134
+#: ../GUI/EmulationThread.cpp:202 ../GUI/MainFrame.cpp:304
+#: ../GUI/MainFrame.cpp:326
+msgid "Error"
+msgstr "Σφάλμα"
+
+#: ../GUI/EmulationThread.cpp:202
+msgid "GameBoy rom not found in the file:\n"
+msgstr "To GameBoy rom δεν βρέθηκε στο αρχείο:\n"
+
+#: ../GUI/SettingsDialog.cpp:164
+msgid "Grayscale"
+msgstr "Διαβαθμίσεις του γκρι"
+
+#: ../GUI/SettingsDialog.cpp:165
+msgid "Greenscale"
+msgstr "Διαβαθμίσεις του πράσινου"
+
+#: ../GUI/SettingsDialog.cpp:54
+msgid "Input"
+msgstr "Είσοδος"
+
+#: ../GUI/MainFrame.cpp:700
+msgid "Language"
+msgstr "Γλώσσα "
+
+#: ../GUI/SettingsDialog.cpp:236
+msgid "Left:"
+msgstr "Αριστερά"
+
+#: ../GUI/AboutDialog.cpp:51
+msgid "Licence type: "
+msgstr "Τύπος άδειας:"
+
+#: ../GUI/MainFrame.cpp:169
+msgid "Load State"
+msgstr "Φόρτωση Κατάστασης"
+
+#: ../GUI/AboutDialog.cpp:87
+msgid "OK"
+msgstr "ΟΚ"
+
+#: ../GUI/EmulationThread.cpp:134
+msgid "Only gb, gbc and zip files allowed!"
+msgstr "Επιτρέπονται μόνο αρχεία gb, gbc and zip!"
+
+#: ../GUI/MainFrame.cpp:229
+msgid "Open"
+msgstr "Άνοιγμα"
+
+#: ../GUI/MainFrame.cpp:148
+msgid "Open Recent"
+msgstr "Άνοιγμα Πρόσφατων"
+
+#: ../GUI/SettingsDialog.cpp:156
+msgid "OpenGL (Faster)"
+msgstr "OpenGL (Γρηγορότερο)"
+
+#: ../GUI/MainFrame.cpp:240
+msgid "Pause"
+msgstr "Παύση"
+
+#: ../GUI/SettingsDialog.cpp:42
+msgid "Preferences"
+msgstr "Επιλογές"
+
+#: ../GUI/MainFrame.cpp:232
+msgid "Recent"
+msgstr "Πρόσφατα"
+
+#: ../GUI/SettingsDialog.cpp:153
+msgid "Render method:"
+msgstr "Mέθοδο Render:"
+
+#: ../GUI/SettingsDialog.cpp:239
+msgid "Right:"
+msgstr "Δεξιά"
+
+#: ../GUI/MainFrame.cpp:183
+msgid "S&top"
+msgstr "Δ&ιακοπή"
+
+#: ../GUI/SettingsDialog.cpp:204
+msgid "Sample Rate:"
+msgstr "Ρυθμός Δειγματοληψίας:"
+
+#: ../GUI/MainFrame.cpp:170
+msgid "Save State"
+msgstr "Αποθήκευση Κατάστασης"
+
+#: ../GUI/SettingsDialog.cpp:155
+msgid "Software (Slower)"
+msgstr "Λογισμικό(Βραδύτερο)"
+
+#: ../GUI/SettingsDialog.cpp:53
+msgid "Sound"
+msgstr "Ήχος"
+
+#: ../GUI/MainFrame.cpp:237
+msgid "Start"
+msgstr "Εκκίνηση"
+
+#: ../GUI/MainFrame.cpp:243
+msgid "Stop"
+msgstr "Διακοπή"
+
+#: ../GUI/MainFrame.cpp:203
+msgid "System"
+msgstr "Σύστημα"
+
+#: ../GUI/AboutDialog.cpp:59
+msgid "Thanks to: "
+msgstr "Ευχαριστούμε τους:"
+
+#: ../GUI/EmulationThread.cpp:120
+msgid "The file:\n"
+msgstr "Το αρχείο:\n"
+
+#: ../GUI/MainFrame.cpp:700
+msgid "The language will change the next time you restart the application"
+msgstr ""
+"Η γλώσσα θα αλλάξει την επόμενη φορά που θα κάνετε επανεκκίνηση της εφαρμογής"
+
+#: ../GUI/SettingsDialog.cpp:230
+msgid "Up:"
+msgstr "Πάνω:"
+
+#: ../GUI/AboutDialog.cpp:47
+msgid "Version: "
+msgstr "Έκδοση:"
+
+#: ../GUI/SettingsDialog.cpp:52
+msgid "Video"
+msgstr "Βίντεο"
+
+#: ../GUI/SettingsDialog.cpp:170
+msgid "Window size:"
+msgstr "Μέγεθος παραθύρου:"
+
+#: ../GUI/AboutDialog.cpp:49
+msgid "Written by: "
+msgstr "Συντάχθηκε απο:"
+
+#~ msgid "A:"
+#~ msgstr "A:"
+
+#~ msgid "B:"
+#~ msgstr "A:"
+
+#~ msgid "Select:"
+#~ msgstr "Επιλογή:"
+
+#~ msgid "Start:"
+#~ msgstr "Εκκίνηση:"

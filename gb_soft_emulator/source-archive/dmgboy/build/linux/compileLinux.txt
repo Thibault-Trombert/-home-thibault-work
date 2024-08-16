@@ -1,0 +1,18 @@
+HOW TO COMPILE DMGBOY IN UBUNTU
+-------------------------------
+The next lines explain how to compile DMGBoy in Ubuntu 14.04 with CodeBlocks
+13.12
+
+
+DOWNLOAD NEEDED PACKAGES
+------------------------
+Install the packages listed above. You can copy these lines in the terminal.
+Obviously you need internet connection.
+
+sudo apt-get install build-essential mesa-common-dev libglew-dev
+sudo apt-get install libwxgtk3.0-dev portaudio19-dev codeblocks
+
+
+COMPILE DMGBOY
+--------------
+Open DMGBoy.cbp with CodeBlocks and compile.
